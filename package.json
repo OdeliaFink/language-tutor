@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@slicemachine/adapter-next": "^0.3.24",
+    "@slicemachine/adapter-next": "^0.3.32",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.16",
     "concurrently": "^8.2.2",
@@ -32,7 +32,7 @@
     "postcss": "^8.4.31",
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
-    "slice-machine-ui": "^1.19.2",
+    "slice-machine-ui": "^1.22.2",
     "tailwindcss": "^3.3.5"
   }
 }
