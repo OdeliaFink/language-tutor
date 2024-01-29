@@ -5,8 +5,6 @@ import gsap from 'gsap';
 import * as prismic from '@prismicio/client';
 import { PrismicText } from '@prismicio/react';
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next';
-import { Img1 } from '../image/Main.png';
-console.log('🚀 ~ Img1:', Img1);
 import { Bounded } from './Bounded';
 
 const localeLabels = {
