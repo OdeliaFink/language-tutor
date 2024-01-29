@@ -91,8 +91,7 @@ interface PageDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<PageDocumentDataSlicesSlice>
-  /**
+  slices: prismic.SliceZone<PageDocumentDataSlicesSlice> /**
    * Meta Title field in *Page*
    *
    * - **Field Type**: Text
@@ -411,6 +410,36 @@ type ImageSliceVariation = ImageSliceWhite | ImageSliceLightSlate;
 export type ImageSlice = prismic.SharedSlice<"image", ImageSliceVariation>;
 
 /**
+ * Default variation for Testimonials Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TestimonialsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Testimonials*
+ */
+type TestimonialsSliceVariation = TestimonialsSliceDefault;
+
+/**
+ * Testimonials Shared Slice
+ *
+ * - **API ID**: `testimonials`
+ * - **Description**: Testimonials
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type TestimonialsSlice = prismic.SharedSlice<
+  "testimonials",
+  TestimonialsSliceVariation
+>;
+
+/**
  * Primary content in *TextWithFeatures → Primary*
  */
 export interface TextWithFeaturesSliceDefaultPrimary {
@@ -539,7 +568,7 @@ declare module "@prismicio/client" {
   interface CreateClient {
     (
       repositoryNameOrEndpoint: string,
-      options?: prismic.ClientConfig
+      options?: prismic.ClientConfig,
     ): prismic.Client<AllDocumentTypes>;
   }
 
@@ -547,23 +576,35 @@ declare module "@prismicio/client" {
     export type {
       NavigationDocument,
       NavigationDocumentData,
+      NavigationDocumentDataLinksItem,
       PageDocument,
       PageDocumentData,
+      PageDocumentDataSlicesSlice,
       SettingsDocument,
       SettingsDocumentData,
       AllDocumentTypes,
       HeroSlice,
+      HeroSliceDefaultPrimary,
+      HeroSliceWithButtonPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
       HeroSliceWithButton,
       ImageSlice,
+      ImageSliceWhitePrimary,
+      ImageSliceLightSlatePrimary,
       ImageSliceVariation,
       ImageSliceWhite,
       ImageSliceLightSlate,
+      TestimonialsSlice,
+      TestimonialsSliceVariation,
+      TestimonialsSliceDefault,
       TextWithFeaturesSlice,
+      TextWithFeaturesSliceDefaultPrimary,
+      TextWithFeaturesSliceDefaultItem,
       TextWithFeaturesSliceVariation,
       TextWithFeaturesSliceDefault,
       TextWithImageSlice,
+      TextWithImageSliceDefaultPrimary,
       TextWithImageSliceVariation,
       TextWithImageSliceDefault,
     };
