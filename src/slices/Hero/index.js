@@ -1,15 +1,22 @@
-import { PrismicNextLink, PrismicNextImage } from "@prismicio/next";
-import * as prismic from "@prismicio/client";
+import { PrismicNextLink, PrismicNextImage } from '@prismicio/next';
+import * as prismic from '@prismicio/client';
 
-import { Bounded } from "@/components/Bounded";
-import { Heading } from "@/components/Heading";
-import { PrismicRichText } from "@/components/PrismicRichText";
+import { Bounded } from '@/components/Bounded';
+import { Heading } from '@/components/Heading';
+import { PrismicRichText } from '@/components/PrismicRichText';
 
 const Hero = ({ slice }) => {
   return (
-    <Bounded as="section" collapsible={false} className="bg-white pb-0 md:pb-0">
+    <section as="section" collapsible={false} className="bg-white pb-0 md:pb-0">
       <div className="grid grid-cols-1 justify-items-center gap-10">
-        <div className="max-w-2xl text-center leading-relaxed">
+        <div className="w-full">
+          <PrismicNextImage
+            field={slice.primary.image}
+            sizes="100vw"
+            className="w-full object-cover max-h-screen"
+          />
+        </div>
+        <div className="max-w-2xl text-center leading-relaxed absolute top-[12rem]">
           <PrismicRichText
             field={slice.primary.text}
             components={{
@@ -31,17 +38,8 @@ const Hero = ({ slice }) => {
               {slice.primary.buttonText}
             </PrismicNextLink>
           )}
-        {prismic.isFilled.image(slice.primary.image) && (
-          <div className="w-full">
-            <PrismicNextImage
-              field={slice.primary.image}
-              sizes="100vw"
-              className="w-full"
-            />
-          </div>
-        )}
       </div>
-    </Bounded>
+    </section>
   );
 };
 
