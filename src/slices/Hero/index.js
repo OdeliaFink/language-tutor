@@ -16,7 +16,7 @@ const Hero = ({ slice }) => {
             className="w-full object-cover max-h-screen"
           />
         </div>
-        <div className="max-w-2xl text-center leading-relaxed absolute top-[12rem]">
+        <div className="max-w-2xl text-center leading-none absolute md:w-[80%] lg:top-[7rem] md:top-[5rem]">
           <PrismicRichText
             field={slice.primary.text}
             components={{

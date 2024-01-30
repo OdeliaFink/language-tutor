@@ -21,7 +21,7 @@ export function Header({ locales = [], navigation, settings }) {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
 
-      const threshold = 100;
+      const threshold = 50;
 
       if (scrollTop > threshold && isVisible) {
         gsap.to('.navbar', {
@@ -49,7 +49,7 @@ export function Header({ locales = [], navigation, settings }) {
         <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3 leading-none">
           <nav
             className={`p-4 transition ${
-              isVisible ? 'bg-transparent' : 'bg-white shadow-md'
+              isVisible ? 'bg-transparent' : 'bg-white opacity-80 shadow-md'
             } w-full`}
           >
             <div className="flex flex-wrap justify-center gap-x-6">
