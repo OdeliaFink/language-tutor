@@ -14,35 +14,27 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"icon_label",
+						"testimonial_selection",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "sheep",
+							"value": "3",
+							"type": "Select"
+						}
+					],
+					[
+						"testimonial_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "design",
 							"type": "Text"
 						}
 					],
 					[
-						"icon",
+						"testimonial_desc",
 						{
-							"__TYPE__": "ImageContent",
-							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
-								"width": 4010,
-								"height": 4010
-							},
-							"url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72",
-							"width": 4010,
-							"height": 4010,
-							"edit": {
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								},
-								"background": "transparent"
-							},
-							"thumbnails": {}
+							"__TYPE__": "FieldContent",
+							"value": "since",
+							"type": "Text"
 						}
 					]
 				]

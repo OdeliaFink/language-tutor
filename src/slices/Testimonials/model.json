@@ -21,19 +21,32 @@
         }
       },
       "items": {
-        "icon_label": {
+        "testimonial_selection": {
+          "type": "Select",
+          "config": {
+            "label": "Testimonial Selection",
+            "placeholder": "",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ]
+          }
+        },
+        "testimonial_title": {
           "type": "Text",
           "config": {
-            "label": "Icon Label",
+            "label": "Testimonial Title",
             "placeholder": ""
           }
         },
-        "icon": {
-          "type": "Image",
+        "testimonial_desc": {
+          "type": "Text",
           "config": {
-            "label": "Icon",
-            "constraint": {},
-            "thumbnails": []
+            "label": "Testimonial Desc",
+            "placeholder": ""
           }
         }
       }

@@ -430,24 +430,34 @@ export interface TestimonialsSliceDefaultPrimary {
  */
 export interface TestimonialsSliceDefaultItem {
   /**
-   * Icon Label field in *Testimonials → Items*
+   * Testimonial Selection field in *Testimonials → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **API ID Path**: testimonials.items[].testimonial_selection
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  testimonial_selection: prismic.SelectField<"1" | "2" | "3" | "4" | "5">;
+
+  /**
+   * Testimonial Title field in *Testimonials → Items*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: testimonials.items[].icon_label
+   * - **API ID Path**: testimonials.items[].testimonial_title
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  icon_label: prismic.KeyTextField;
+  testimonial_title: prismic.KeyTextField;
 
   /**
-   * Icon field in *Testimonials → Items*
+   * Testimonial Desc field in *Testimonials → Items*
    *
-   * - **Field Type**: Image
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: testimonials.items[].icon
-   * - **Documentation**: https://prismic.io/docs/field#image
+   * - **API ID Path**: testimonials.items[].testimonial_desc
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  icon: prismic.ImageField<never>;
+  testimonial_desc: prismic.KeyTextField;
 }
 
 /**
