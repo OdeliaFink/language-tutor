@@ -6,6 +6,7 @@ import * as prismic from '@prismicio/client';
 import { PrismicText } from '@prismicio/react';
 import { PrismicNextImage, PrismicNextLink } from '@prismicio/next';
 import { Bounded } from './Bounded';
+import logo from '../icons/logo.png';
 
 const localeLabels = {
   'en-us': 'EN',
@@ -52,8 +53,12 @@ export function Header({ locales = [], navigation, settings }) {
               isVisible ? 'bg-transparent' : 'bg-white opacity-80 shadow-md'
             } w-full`}
           >
-            <div className="flex flex-wrap justify-center gap-x-6">
-              <ul className="flex flex-wrap gap-6 md:gap-10">
+            <div className="flex flex-wrap justify-center gap-x-6 items-center">
+              <ul className="flex flex-wrap items-center gap-6 md:gap-10">
+                <PrismicNextLink href="/" className="lg:pr-[50rem]">
+                  {' '}
+                  <img src={logo.src} className="w-[9rem]" />
+                </PrismicNextLink>
                 {navigation.data?.links.map((item) => (
                   <li
                     key={prismic.asText(item.label)}
