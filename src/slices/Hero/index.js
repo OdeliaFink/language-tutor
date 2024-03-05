@@ -13,10 +13,10 @@ const Hero = ({ slice }) => {
           <PrismicNextImage
             field={slice.primary.image}
             sizes="100vw"
-            className="w-full object-cover max-h-screen"
+            className="w-full object-cover max-h-screen lg:h-[50rem] h-[38rem]"
           />
         </div>
-        <div className="max-w-2xl text-center leading-none absolute md:w-[80%] lg:top-[7rem] md:top-[5rem]">
+        <div className="max-w-2xl text-center leading-none absolute md:w-[80%] lg:top-[7rem] md:top-[5rem] top-[7rem]">
           <PrismicRichText
             field={slice.primary.text}
             components={{

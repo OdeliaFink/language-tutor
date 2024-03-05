@@ -48,6 +48,13 @@
             "label": "Testimonial Desc",
             "placeholder": ""
           }
+        },
+        "date": {
+          "type": "Text",
+          "config": {
+            "label": "Date",
+            "placeholder": ""
+          }
         }
       }
     }

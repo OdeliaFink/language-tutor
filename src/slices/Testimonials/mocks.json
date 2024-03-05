@@ -36,6 +36,14 @@
 							"value": "since",
 							"type": "Text"
 						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "swing",
+							"type": "Text"
+						}
 					]
 				]
 			}
