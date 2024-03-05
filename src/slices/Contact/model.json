@@ -10,7 +10,66 @@
       "docURL": "...",
       "version": "initial",
       "description": "Default",
-      "imageUrl": ""
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "first_name": {
+          "type": "Text",
+          "config": {
+            "label": "First Name",
+            "placeholder": ""
+          }
+        },
+        "last_name": {
+          "type": "Text",
+          "config": {
+            "label": "Last Name",
+            "placeholder": ""
+          }
+        },
+        "email": {
+          "type": "Text",
+          "config": {
+            "label": "Email",
+            "placeholder": ""
+          }
+        },
+        "comments": {
+          "type": "Text",
+          "config": {
+            "label": "Comments",
+            "placeholder": ""
+          }
+        },
+        "address": {
+          "type": "Text",
+          "config": {
+            "label": "Address",
+            "placeholder": ""
+          }
+        },
+        "contact_us": {
+          "type": "Text",
+          "config": {
+            "label": "Contact Us",
+            "placeholder": ""
+          }
+        },
+        "whatsapp": {
+          "type": "Text",
+          "config": {
+            "label": "Whatsapp",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
     }
   ]
 }
