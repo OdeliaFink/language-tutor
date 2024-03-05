@@ -62,6 +62,7 @@ export type NavigationDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | ContactSlice
   | TestimonialsSlice
   | HeroSlice
   | ImageSlice
@@ -209,6 +210,91 @@ export type AllDocumentTypes =
   | SettingsDocument;
 
 /**
+ * Primary content in *Contact → Primary*
+ */
+export interface ContactSliceDefaultPrimary {
+  /**
+   * Heading field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
+   * First Name field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.first_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  first_name: prismic.KeyTextField;
+
+  /**
+   * Last Name field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.last_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  last_name: prismic.KeyTextField;
+
+  /**
+   * Email field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.email
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  email: prismic.KeyTextField;
+
+  /**
+   * Comments field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.comments
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  comments: prismic.KeyTextField;
+
+  /**
+   * Address field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.address
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  address: prismic.KeyTextField;
+
+  /**
+   * Contact Us field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.contact_us
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  contact_us: prismic.KeyTextField;
+
+  /**
+   * Whatsapp field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.whatsapp
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  whatsapp: prismic.KeyTextField;
+}
+
+/**
  * Default variation for Contact Slice
  *
  * - **API ID**: `default`
@@ -217,7 +303,7 @@ export type AllDocumentTypes =
  */
 export type ContactSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<ContactSliceDefaultPrimary>,
   never
 >;
 
@@ -675,6 +761,7 @@ declare module "@prismicio/client" {
       SettingsDocumentData,
       AllDocumentTypes,
       ContactSlice,
+      ContactSliceDefaultPrimary,
       ContactSliceVariation,
       ContactSliceDefault,
       HeroSlice,

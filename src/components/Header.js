@@ -10,9 +10,8 @@ import logo from '../icons/logo.png';
 
 const localeLabels = {
   'en-us': 'EN',
-  'fr-fr': 'FR',
-  // '': 'RU',
-  // tr: 'TR',
+  'ru-ru': 'RU',
+  'tr-tr': 'TR',
 };
 
 export function Header({ locales = [], navigation, settings }) {
@@ -55,7 +54,7 @@ export function Header({ locales = [], navigation, settings }) {
           >
             <div className="flex flex-wrap justify-center gap-x-6 items-center">
               <ul className="flex flex-wrap items-center gap-6 md:gap-10">
-                <PrismicNextLink href="/" className="lg:pr-[50rem]">
+                <PrismicNextLink href="/" className="lg:pr-[45rem]">
                   {' '}
                   <img src={logo.src} className="w-[9rem]" />
                 </PrismicNextLink>
