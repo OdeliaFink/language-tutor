@@ -10,8 +10,8 @@ import logo from '../icons/logo.png';
 
 const localeLabels = {
   'en-us': 'EN',
-  'ru-ru': 'RU',
-  'tr-tr': 'TR',
+  ru: 'RU',
+  tr: 'TR',
 };
 
 export function Header({ locales = [], navigation, settings }) {

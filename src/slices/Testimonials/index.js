@@ -13,14 +13,16 @@ const Testimonials = ({ slice }) => {
       className="pt-0"
     >
       <div className="flex justify-center pb-5">
-        <h2 className="font-semibold text-[3rem]">{slice.primary.title}</h2>
+        <h2 className="font-semibold text-[3rem] text-[#746e86]">
+          {slice.primary.title}
+        </h2>
       </div>
 
-      <div className="flex gap-6 md:flex-row flex-col items-center">
+      <div className="flex gap-6 lg:flex-row flex-col items-center">
         {slice.items.map((item, index) => (
           <div
             key={index}
-            className="flex border border-slate-500 flex  flex-1 text-sm max-w-prose bg-slate-300 shadow-md  rounded"
+            className="flex border border-slate-500 flex  flex-1 text-sm max-w-prose shadow-md  rounded"
           >
             <div className="p-8 gap-2">
               <div className="font-bold">{item.testimonial_title}</div>

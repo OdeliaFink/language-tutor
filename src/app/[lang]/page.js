@@ -27,7 +27,7 @@ export default async function Page({ params: { lang } }) {
   const settings = await client.getSingle('settings', { lang });
 
   const locales = await getLocales(page, client);
-  console.log('🚀 ~ Page ~ locales:', locales);
+  console.log('🚀 ~ Page ~ locales:', locales[2].lang);
 
   return (
     <Layout locales={locales} navigation={navigation} settings={settings}>
