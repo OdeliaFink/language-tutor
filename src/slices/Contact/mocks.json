@@ -42,6 +42,16 @@
 				"__TYPE__": "FieldContent",
 				"value": "past",
 				"type": "Text"
+			},
+			"address_heading": {
+				"__TYPE__": "FieldContent",
+				"value": "heavy",
+				"type": "Text"
+			},
+			"contact_heading": {
+				"__TYPE__": "FieldContent",
+				"value": "breathing",
+				"type": "Text"
 			}
 		},
 		"items": []

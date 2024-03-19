@@ -292,6 +292,26 @@ export interface ContactSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   whatsapp: prismic.KeyTextField;
+
+  /**
+   * Address Heading field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.address_heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  address_heading: prismic.KeyTextField;
+
+  /**
+   * Contact Heading field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.contact_heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  contact_heading: prismic.KeyTextField;
 }
 
 /**

@@ -67,6 +67,20 @@
             "label": "Whatsapp",
             "placeholder": ""
           }
+        },
+        "address_heading": {
+          "type": "Text",
+          "config": {
+            "label": "Address Heading",
+            "placeholder": ""
+          }
+        },
+        "contact_heading": {
+          "type": "Text",
+          "config": {
+            "label": "Contact Heading",
+            "placeholder": ""
+          }
         }
       },
       "items": {}

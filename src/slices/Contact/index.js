@@ -56,18 +56,34 @@ const Contact = ({ slice }) => {
       <section
         data-slice-type={slice.slice_type}
         data-slice-variation={slice.variation}
-        className="pt-6 h-screen flex flex-row items-center justify-center gap-[10rem]  mx-auto"
+        className="lg:pt-6 h-screen flex md:flex-row flex-col md:items-center justify-center lg:gap-[10rem] gap-[2rem]  mx-auto sm:px-[2rem] lg:px-0"
       >
-        <div className="flex-3">
-          <h1 className="font-semibold text-[2.5rem]">
+        <div className="pl-[1rem] pt-[3rem] md:pt-[0rem]">
+          <div className="md:pb-12">
+            <div className="md:pb-8">
+              <h1 className="font-semibold md:text-[1.5rem] text-[1rem]">
+                {slice.primary.address_heading}
+              </h1>
+              <h3 className="font-semibold md:text-[1.5rem] text-[1rem]">
+                {slice.primary.address}
+              </h3>
+            </div>
+            <h1 className="font-semibold md:text-[1.5rem] text-[1rem]">
+              {slice.primary.contact_heading}
+            </h1>
+            <p className="font-regular md:text-[1.5rem] text-[1rem]">
+              {slice.primary.whatsapp}
+            </p>
+          </div>
+          <h1 className="font-semibold text-[1rem]">
             {slice.primary.contact_us}
           </h1>
-          <h3 className="font-semibold text-[2rem]">{slice.primary.address}</h3>
-          <p className="font-regular text-[1rem]">{slice.primary.whatsapp}</p>
         </div>
-        <form onSubmit={handleSubmit} className=" flex-3">
+        <form onSubmit={handleSubmit} className="md:px-0 pr-[2rem] pl-[1rem]">
           <div className="pb-8 text-left">
-            <h1 className="font-semibold text-4xl">{slice.primary.heading}</h1>
+            <h1 className="font-semibold md:text-4xl text-2xl">
+              {slice.primary.heading}
+            </h1>
           </div>
           <div className="">
             <div className="flex space-x-4">
