@@ -12,6 +12,7 @@ const localeLabels = {
   'en-us': 'EN',
   ru: 'RU',
   tr: 'TR',
+  'uk-uk': 'UKR',
 };
 
 export function Header({ locales = [], navigation, settings }) {
