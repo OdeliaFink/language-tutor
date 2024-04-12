@@ -81,6 +81,13 @@
             "label": "Contact Heading",
             "placeholder": ""
           }
+        },
+        "submit": {
+          "type": "Text",
+          "config": {
+            "label": "Submit",
+            "placeholder": ""
+          }
         }
       },
       "items": {}

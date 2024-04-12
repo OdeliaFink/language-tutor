@@ -160,7 +160,7 @@ const Contact = ({ slice }) => {
               type="submit"
               className="bg-[#B7C8B5] text-white px-6 py-2 rounded-sm hover:bg-[#6F846C] hover:ease-in-out duration-300"
             >
-              Submit
+              {slice.primary.submit}
             </button>
           </div>
         </form>

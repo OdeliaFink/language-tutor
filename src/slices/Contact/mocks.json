@@ -52,6 +52,11 @@
 				"__TYPE__": "FieldContent",
 				"value": "breathing",
 				"type": "Text"
+			},
+			"submit": {
+				"__TYPE__": "FieldContent",
+				"value": "born",
+				"type": "Text"
 			}
 		},
 		"items": []

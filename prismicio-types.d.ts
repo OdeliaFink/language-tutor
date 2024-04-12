@@ -186,6 +186,17 @@ interface SettingsDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   newsletterDisclaimer: prismic.RichTextField;
+
+  /**
+   * Address field in *Settings*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.address
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  address: prismic.KeyTextField;
 }
 
 /**
@@ -312,6 +323,16 @@ export interface ContactSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   contact_heading: prismic.KeyTextField;
+
+  /**
+   * Submit field in *Contact → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.primary.submit
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  submit: prismic.KeyTextField;
 }
 
 /**
