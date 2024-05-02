@@ -24,7 +24,6 @@ export function Footer({ settings }) {
         <div className="flex flex-col justify-center">
           {/* <h4 className="font-bold text-1xl">Contact</h4> */}
           <p>info@walkinenglish.com</p>
-          <p>90-542-851-9258 </p>
           <p> {settings.data.address}</p>
         </div>
       </div>

@@ -71,13 +71,11 @@ const Contact = ({ slice }) => {
             <h1 className="font-semibold md:text-[1.5rem] text-[1rem]">
               {slice.primary.contact_heading}
             </h1>
-            <p className="font-regular md:text-[1.5rem] text-[1rem]">
-              {slice.primary.whatsapp}
-            </p>
+
+            <h1 className="font-semibold text-[1rem]">
+              {slice.primary.contact_us}
+            </h1>
           </div>
-          <h1 className="font-semibold text-[1rem]">
-            {slice.primary.contact_us}
-          </h1>
         </div>
         <form onSubmit={handleSubmit} className="md:px-0 pr-[2rem] pl-[1rem]">
           <div className="pb-8 text-left">
